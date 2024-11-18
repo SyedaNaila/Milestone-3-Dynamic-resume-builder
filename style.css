@@ -1,0 +1,136 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fb;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Form Styles */
+#resumeform {
+    background-color: #ffffff;
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+#resumeform label {
+    font-size: 16px;
+    color: #2c3e50;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+#resumeform input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+#resumeform input[type="text"],
+#resumeform input[type="email"],
+#resumeform input[type="number"] {
+    width: 100%;
+}
+
+#resumeform input[type="text"]:focus,
+#resumeform input[type="email"]:focus,
+#resumeform input[type="number"]:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+#resumeform button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+#resumeform button:hover {
+    background-color: #2980b9;
+}
+
+/* Resume Output Styles */
+#resumeoutput {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+#resumeoutput h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+#resumeoutput p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 8px 0;
+    padding: 0;
+}
+
+#resumeoutput p strong {
+    color: #3498db;
+}
+
+#resumeoutput p:last-child {
+    margin-bottom: 0;
+}
+
+#resumeoutput .section-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+    color: #2c3e50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    #resumeform {
+        width: 100%;
+    }
+
+    #resumeoutput {
+        width: 100%;
+    }
+}
